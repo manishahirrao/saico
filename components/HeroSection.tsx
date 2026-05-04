@@ -3,6 +3,7 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
+import { FaCheckCircle, FaArrowRight } from 'react-icons/fa';
 import HeroBackground from './hero/HeroBackground';
 import AnimatedShowcase from './hero/AnimatedShowcase';
 
@@ -50,32 +51,6 @@ export default function HeroSection() {
             animate="visible"
             className="space-y-6"
           >
-            {/* Logo with Glow */}
-            <motion.div variants={itemVariants}>
-              <div
-                className="relative w-[140px] h-[70px] mb-4"
-                style={{
-                  filter: 'drop-shadow(0 4px 18px rgba(0,176,202,0.15))',
-                }}
-              >
-                <Image
-                  src="/logo.jpg"
-                  alt="Konica Minolta Authorised Dealer — Saicotech Services"
-                  fill
-                  sizes="140px"
-                  className="object-contain"
-                  priority
-                />
-              </div>
-            </motion.div>
-
-            {/* Eyebrow */}
-            <motion.div variants={itemVariants}>
-              <span className="inline-flex items-center px-4 py-2 bg-km-teal/10 border border-km-teal/30 rounded-full text-km-teal text-[12px] font-body font-medium">
-                Authorised Channel Partner · Konica Minolta & Riso Japan
-              </span>
-            </motion.div>
-
             {/* Headline */}
             <motion.h1
               variants={itemVariants}
@@ -103,9 +78,9 @@ export default function HeroSection() {
             <motion.div variants={itemVariants} className="flex flex-wrap gap-4">
               <Link
                 href="#products"
-                className="inline-flex items-center justify-center h-[48px] px-8 bg-km-teal text-white font-body font-semibold text-[15px] rounded-[10px] hover:bg-km-cyan transition-colors duration-200 shadow-lg shadow-km-teal/20"
+                className="inline-flex items-center justify-center gap-2 h-[48px] px-8 bg-km-teal text-white font-body font-semibold text-[15px] rounded-[10px] hover:bg-km-cyan transition-colors duration-200 shadow-lg shadow-km-teal/20"
               >
-                View Products →
+                View Products <FaArrowRight />
               </Link>
               <Link
                 href="#contact"
@@ -125,7 +100,7 @@ export default function HeroSection() {
                   key={badge}
                   className="inline-flex items-center gap-2 px-3 py-1.5 bg-gray-100 rounded-full text-gray-700 text-[12px] font-body"
                 >
-                  <span className="text-km-teal">✓</span>
+                  <FaCheckCircle className="text-km-teal" />
                   {badge}
                 </span>
               ))}

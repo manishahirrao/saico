@@ -2,6 +2,7 @@
 
 import Link from 'next/link';
 import EnquiryForm from './contact/EnquiryForm';
+import { FaMapMarkerAlt, FaPhone, FaWhatsapp, FaUser, FaBuilding, FaStar } from 'react-icons/fa';
 
 export default function ContactSection() {
   return (
@@ -36,7 +37,7 @@ export default function ContactSection() {
             {/* Address */}
             <div>
               <div className="flex items-start gap-3">
-                <span className="text-[1.5rem]">📍</span>
+                <FaMapMarkerAlt className="text-km-teal text-[1.5rem] mt-1" />
                 <div>
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-2">
                     Visit Our Office
@@ -55,7 +56,7 @@ export default function ContactSection() {
             {/* Phone */}
             <div>
               <div className="flex items-start gap-3">
-                <span className="text-[1.5rem]">📞</span>
+                <FaPhone className="text-km-teal text-[1.3rem] mt-1" />
                 <div>
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-2">
                     Call Us
@@ -81,7 +82,7 @@ export default function ContactSection() {
             {/* WhatsApp */}
             <div>
               <div className="flex items-start gap-3">
-                <span className="text-[1.5rem]">💬</span>
+                <FaWhatsapp className="text-[#25D366] text-[1.5rem] mt-1" />
                 <div>
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-2">
                     WhatsApp
@@ -102,7 +103,7 @@ export default function ContactSection() {
             {/* Contact Person */}
             <div>
               <div className="flex items-start gap-3">
-                <span className="text-[1.5rem]">🧑</span>
+                <FaUser className="text-km-teal text-[1.3rem] mt-1" />
                 <div>
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-1">
                     Mr. Sandeep Shrivastava
@@ -117,7 +118,7 @@ export default function ContactSection() {
             {/* GST */}
             <div>
               <div className="flex items-start gap-3">
-                <span className="text-[1.5rem]">🏛️</span>
+                <FaBuilding className="text-km-teal text-[1.3rem] mt-1" />
                 <div>
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-1">
                     GST Number
@@ -132,7 +133,7 @@ export default function ContactSection() {
             {/* Response Rate Badge */}
             <div className="pt-4 border-t border-gray-200">
               <span className="inline-flex items-center gap-2 px-4 py-2 bg-km-teal/10 border border-km-teal/30 rounded-full text-km-teal text-[13px] font-body font-medium">
-                ⭐ 83% Response Rate on IndiaMART
+                <FaStar /> 83% Response Rate on IndiaMART
               </span>
             </div>
 

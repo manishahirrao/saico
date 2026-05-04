@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Product } from '@/data/products';
 
 interface RisoCardProps {
@@ -15,7 +16,7 @@ export default function RisoCard({ product }: RisoCardProps) {
       initial={{ opacity: 0, y: 24 }}
       viewport={{ once: true }}
       whileHover={{ y: -5 }}
-      className="bg-white rounded-[14px] border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-[#22C55E]"
+      className="group bg-white rounded-[14px] border border-gray-200 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 hover:border-[#22C55E]"
       style={{ borderLeft: '3px solid #22C55E' }}
     >
       {/* Header with PPM */}
@@ -34,17 +35,15 @@ export default function RisoCard({ product }: RisoCardProps) {
 
       {/* Body */}
       <div className="p-6 space-y-4">
-        {/* Image Placeholder */}
-        <div
-          className="w-full h-[200px] rounded-lg flex items-center justify-center text-center"
-          style={{
-            background: 'rgba(34, 197, 94, 0.07)',
-            border: '1.5px dashed rgba(34, 197, 94, 0.2)',
-          }}
-        >
-          <span className="font-body text-[#22C55E]/60 text-[0.875rem] italic px-4">
-            [Product Image — {product.model} — Add Later]
-          </span>
+        {/* Product Image */}
+        <div className="w-full h-[240px] rounded-lg relative flex items-center justify-center bg-gradient-to-br from-[#22C55E]/5 to-white overflow-hidden group-hover:from-[#22C55E]/10 transition-all duration-300">
+          <Image
+            src={product.image!}
+            alt={product.fullName}
+            fill
+            sizes="(max-width: 768px) 100vw, 50vw"
+            className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+          />
         </div>
 
         {/* Model & Name */}
@@ -84,14 +83,13 @@ export default function RisoCard({ product }: RisoCardProps) {
           </div>
         </div>
 
-        {/* Footer - Price & CTA */}
-        <div className="flex items-center justify-between pt-4 border-t border-gray-100">
-          <div className="font-display font-bold text-gray-900 text-[1.25rem]">
-            {product.price}
-          </div>
+        {/* Footer - CTA Button */}
+        <div className="flex justify-center pt-4 border-t border-gray-100">
           <Link
-            href="#contact"
-            className="inline-flex items-center justify-center px-5 py-2.5 border-2 border-[#22C55E] text-[#22C55E] font-body font-semibold text-[0.875rem] rounded-lg hover:bg-[#22C55E] hover:text-white transition-all duration-200"
+            href={`https://wa.me/919826444348?text=Hi, I'm interested in ${product.fullName}`}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-full inline-flex items-center justify-center px-5 py-2.5 bg-[#22C55E] text-white font-body font-semibold text-[0.875rem] rounded-lg hover:bg-[#16A34A] transition-all duration-200 shadow-md hover:shadow-lg"
           >
             Get Quote →
           </Link>

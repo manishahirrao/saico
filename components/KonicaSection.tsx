@@ -2,7 +2,6 @@
 
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import Image from 'next/image';
 import ProductCard from './products/ProductCard';
 import { konicaProducts, type Tag } from '@/data/products';
 
@@ -32,21 +31,10 @@ export default function KonicaSection() {
       <div className="relative z-10 max-w-[1200px] mx-auto px-6">
         {/* Section Header */}
         <div className="mb-12">
-          {/* Eyebrow with Logo */}
-          <div className="flex items-center gap-3 mb-4">
-            <div className="relative w-[28px] h-[28px]">
-              <Image
-                src="/logo.jpg"
-                alt="Konica Minolta"
-                fill
-                sizes="28px"
-                className="object-contain"
-              />
-            </div>
-            <span className="font-body font-semibold text-km-teal text-[13px] tracking-[0.16em] uppercase">
-              KONICA MINOLTA
-            </span>
-          </div>
+          {/* Eyebrow */}
+          <span className="inline-block font-body font-semibold text-km-teal text-[13px] tracking-[0.16em] uppercase mb-4">
+            KONICA MINOLTA
+          </span>
 
           {/* Heading */}
           <h2

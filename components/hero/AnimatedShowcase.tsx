@@ -2,6 +2,8 @@
 
 import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
+import Image from 'next/image';
+import Link from 'next/link';
 import { getFeaturedProducts } from '@/data/products';
 
 export default function AnimatedShowcase() {
@@ -68,13 +70,15 @@ export default function AnimatedShowcase() {
               </span>
             </div>
 
-            {/* Image Placeholder */}
-            <div
-              className="w-full h-[200px] mb-4 rounded-lg flex items-center justify-center text-center bg-gray-50 border-2 border-dashed border-gray-300"
-            >
-              <span className="font-body italic text-[13px] text-gray-500">
-                [Product Image — {currentProduct.model}]
-              </span>
+            {/* Product Image */}
+            <div className="w-full h-[240px] mb-4 rounded-lg relative flex items-center justify-center bg-gradient-to-br from-km-teal/5 to-white overflow-hidden">
+              <Image
+                src={currentProduct.image!}
+                alt={currentProduct.fullName}
+                fill
+                sizes="(max-width: 768px) 100vw, 400px"
+                className="object-contain p-6 hover:scale-105 transition-transform duration-300"
+              />
             </div>
 
             {/* Model Number */}
@@ -104,11 +108,16 @@ export default function AnimatedShowcase() {
               </span>
             </div>
 
-            {/* Price */}
+            {/* CTA Button */}
             <div className="pt-4 border-t border-gray-200">
-              <span className="font-display font-extrabold text-[1.5rem] text-km-teal">
-                {currentProduct.price}
-              </span>
+              <Link
+                href={`https://wa.me/919826444348?text=Hi, I'm interested in ${currentProduct.fullName}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="w-full inline-flex items-center justify-center px-4 py-2.5 bg-km-teal text-white font-body font-semibold text-[14px] rounded-lg hover:bg-km-cyan transition-colors duration-200 shadow-md"
+              >
+                Get Quote →
+              </Link>
             </div>
           </motion.div>
         </AnimatePresence>

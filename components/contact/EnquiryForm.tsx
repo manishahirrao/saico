@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { allProducts } from '@/data/products';
+import { FaCheckCircle } from 'react-icons/fa';
 
 export default function EnquiryForm() {
   const [formData, setFormData] = useState({
@@ -78,7 +79,9 @@ ${formData.message ? `Message: ${formData.message}` : ''}`;
   if (isSuccess) {
     return (
       <div className="bg-km-teal/10 border border-km-teal rounded-[14px] p-8 text-center">
-        <div className="text-[3rem] mb-4">✅</div>
+        <div className="text-[3rem] mb-4 flex justify-center text-km-teal">
+          <FaCheckCircle />
+        </div>
         <h3 className="font-display font-bold text-[1.5rem] text-gray-900 mb-2">
           Thank You!
         </h3>
@@ -254,7 +257,7 @@ ${formData.message ? `Message: ${formData.message}` : ''}`;
             Sending...
           </>
         ) : (
-          <>Send Quote Request via WhatsApp →</>
+          <>Send Quote Request →</>
         )}
       </button>
 

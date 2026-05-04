@@ -43,7 +43,7 @@ export default function GlobalNav() {
           <Link href="/" className="flex items-center gap-3 group">
             <div className="relative w-[88px] h-[44px] transition-all duration-200 group-hover:drop-shadow-[0_0_8px_rgba(0,176,202,0.3)]">
               <Image
-                src="/logo.jpg"
+                src="/logo.png"
                 alt="Konica Minolta — Saicotech Services Authorised Dealer Bhopal"
                 fill
                 sizes="88px"
@@ -122,7 +122,7 @@ export default function GlobalNav() {
               {/* Logo in Mobile Menu */}
               <div className="relative w-[120px] h-[60px] mb-8">
                 <Image
-                  src="/logo.jpg"
+                  src="/logo.png"
                   alt="Konica Minolta"
                   fill
                   sizes="120px"

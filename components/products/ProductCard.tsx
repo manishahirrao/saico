@@ -2,6 +2,7 @@
 
 import { motion } from 'framer-motion';
 import Link from 'next/link';
+import Image from 'next/image';
 import type { Product } from '@/data/products';
 
 interface ProductCardProps {
@@ -71,11 +72,15 @@ export default function ProductCard({ product }: ProductCardProps) {
         borderLeft: `3px solid ${borderColor}`,
       }}
     >
-      {/* Image Placeholder */}
-      <div className="w-full h-[200px] flex items-center justify-center text-center bg-gray-50 border-b border-gray-200">
-        <span className="font-body italic text-[13px] text-gray-400 px-4">
-          [Product Image — {product.model} — Add Later]
-        </span>
+      {/* Product Image */}
+      <div className="w-full h-[240px] relative flex items-center justify-center bg-gradient-to-br from-gray-50 to-white border-b border-gray-200 overflow-hidden group-hover:bg-gradient-to-br group-hover:from-km-teal/5 group-hover:to-white transition-all duration-300">
+        <Image
+          src={product.image!}
+          alt={product.fullName}
+          fill
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+          className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+        />
       </div>
 
       {/* Card Content */}
@@ -131,16 +136,13 @@ export default function ProductCard({ product }: ProductCardProps) {
         {/* Divider */}
         <div className="border-t border-gray-200 pt-3" />
 
-        {/* Footer: Price + CTA */}
-        <div className="flex items-center justify-between">
-          <span className="font-display font-bold text-[1.15rem] text-gray-900">
-            {product.price}
-          </span>
+        {/* Footer: CTA Button */}
+        <div className="flex justify-center">
           <Link
             href={`https://wa.me/919826444348?text=Hi, I'm interested in ${product.fullName}`}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-4 py-2 border-2 border-km-teal text-km-teal text-[13px] font-body font-semibold rounded-lg hover:bg-km-teal hover:text-white transition-colors duration-200"
+            className="w-full inline-flex items-center justify-center px-4 py-2.5 bg-km-teal text-white text-[14px] font-body font-semibold rounded-lg hover:bg-km-cyan transition-colors duration-200 shadow-md hover:shadow-lg"
           >
             Get Quote →
           </Link>
