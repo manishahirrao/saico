@@ -5,6 +5,7 @@ import RisoSection from '@/components/RisoSection';
 import ServicesSection from '@/components/ServicesSection';
 import AboutSection from '@/components/AboutSection';
 import ContactSection from '@/components/ContactSection';
+import BusinessListingsSection from '@/components/BusinessListingsSection';
 import Footer from '@/components/Footer';
 import Link from 'next/link';
 import { FaWhatsapp } from 'react-icons/fa';
@@ -19,6 +20,7 @@ export default function Home() {
         <RisoSection />
         <ServicesSection />
         <AboutSection />
+        <BusinessListingsSection />
         <ContactSection />
       </main>
       <Footer />

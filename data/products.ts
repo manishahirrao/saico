@@ -161,7 +161,7 @@ export const risoProducts: Product[] = [
     model: 'CV3230',
     fullName: 'Riso CV3230 Digital Duplicator',
     tag: 'riso',
-    speed: '100 PPM',
+    speed: '130 PPM',
     price: 'Get Quote',
     priceNum: undefined,
     functions: ['High-Speed Printing'],

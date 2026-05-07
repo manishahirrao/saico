@@ -61,17 +61,7 @@ export default function ServicesSection() {
         'After-sales support',
       ],
     },
-    {
-      title: 'Wide Format (A0) Solutions',
-      icon: FaRuler,
-      color: '#22C55E',
-      bullets: [
-        'A0-size wide format copiers',
-        'Large-format scanning',
-        'CAD & blueprint printing',
-        'Architecture & engineering',
-      ],
-    },
+   
   ];
 
   return (
@@ -204,8 +194,7 @@ export default function ServicesSection() {
             </div>
             <div className="mt-2 text-[0.85rem] text-gray-600 flex items-center justify-center gap-2">
               <span className="flex items-center gap-1"><FaTruck className="text-km-teal" /> By Road</span>
-              <span>•</span>
-              <span className="flex items-center gap-1"><FaPlane className="text-km-teal" /> By Air</span>
+
             </div>
           </div>
         </motion.div>
