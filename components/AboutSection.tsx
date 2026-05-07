@@ -2,7 +2,7 @@
 
 import { motion } from 'framer-motion';
 import CounterStat from './CounterStat';
-import { FaCheckCircle, FaUserTie } from 'react-icons/fa';
+import { FaCheckCircle } from 'react-icons/fa';
 
 export default function AboutSection() {
   const stats = [
@@ -118,7 +118,7 @@ export default function AboutSection() {
             className="space-y-6"
           >
             {/* Stats Grid */}
-            <div className="grid grid-cols-2 gap-4 mb-6">
+            <div className="grid grid-cols-2 gap-4">
               {stats.map((stat, index) => (
                 <motion.div
                   key={index}
@@ -135,80 +135,6 @@ export default function AboutSection() {
                 </motion.div>
               ))}
             </div>
-
-            {/* Business Details Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-white rounded-xl p-6 border border-gray-200 shadow-sm"
-            >
-              <h3 className="font-display font-bold text-gray-900 text-[1.2rem] mb-4">
-                Business Details
-              </h3>
-              <div className="space-y-3 text-[0.9rem]">
-                <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                  <span className="font-body text-gray-600">GST Number</span>
-                  <span className="font-mono text-gray-900 font-semibold">23BAZPS4838N1ZM</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                  <span className="font-body text-gray-600">GST Registration</span>
-                  <span className="font-body text-gray-900">01-07-2017</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                  <span className="font-body text-gray-600">Legal Status</span>
-                  <span className="font-body text-gray-900">Proprietorship</span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                  <span className="font-body text-gray-600">Trustseal</span>
-                  <span className="font-body text-km-teal font-semibold flex items-center gap-1">
-                    <FaCheckCircle /> Verified
-                  </span>
-                </div>
-                <div className="flex justify-between items-center pb-2 border-b border-gray-100">
-                  <span className="font-body text-gray-600">Bank Partner</span>
-                  <span className="font-body text-gray-900">HDFC Bank</span>
-                </div>
-                <div className="pt-2">
-                  <div className="font-body text-gray-600 mb-2">Payment Modes</div>
-                  <div className="flex flex-wrap gap-2">
-                    {['Cash', 'Card', 'Transfer', 'Cheque', 'DD', 'Online'].map((mode) => (
-                      <span
-                        key={mode}
-                        className="px-3 py-1 bg-gray-100 rounded-full text-gray-700 text-[0.75rem] font-body"
-                      >
-                        {mode}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </motion.div>
-
-            {/* Proprietor Card */}
-            <motion.div
-              initial={{ opacity: 0, y: 20 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              className="bg-gradient-to-br from-km-teal/5 to-km-cyan/5 rounded-xl p-6 border border-km-teal/20"
-            >
-              <div className="flex items-center gap-4">
-                <div className="w-16 h-16 rounded-full bg-km-teal/20 flex items-center justify-center text-km-teal text-3xl">
-                  <FaUserTie />
-                </div>
-                <div>
-                  <h4 className="font-display font-bold text-gray-900 text-[1.1rem]">
-                    Mr. Sandeep Shrivastava
-                  </h4>
-                  <p className="font-body text-gray-600 text-[0.85rem]">
-                    Proprietor & CEO — Saicotech Services
-                  </p>
-                </div>
-              </div>
-              <p className="mt-4 font-body text-gray-700 text-[0.9rem] italic">
-                "Visionary ideas and zeal to strive for a remarkable position."
-              </p>
-            </motion.div>
           </motion.div>
         </div>
       </div>

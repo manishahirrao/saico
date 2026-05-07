@@ -71,13 +71,13 @@ export default function AnimatedShowcase() {
             </div>
 
             {/* Product Image */}
-            <div className="w-full h-[240px] mb-4 rounded-lg relative flex items-center justify-center bg-gradient-to-br from-km-teal/5 to-white overflow-hidden">
+            <div className="w-full h-[280px] mb-4 rounded-lg relative flex items-center justify-center bg-gradient-to-br from-km-teal/5 to-white overflow-hidden">
               <Image
                 src={currentProduct.image!}
                 alt={currentProduct.fullName}
                 fill
                 sizes="(max-width: 768px) 100vw, 400px"
-                className="object-contain p-6 hover:scale-105 transition-transform duration-300"
+                className="object-contain p-3 hover:scale-105 transition-transform duration-300"
               />
             </div>
 
@@ -128,6 +128,7 @@ export default function AnimatedShowcase() {
             <button
               key={index}
               onClick={() => setCurrentIndex(index)}
+              suppressHydrationWarning
               className={`w-2 h-2 rounded-full transition-all duration-200 ${
                 index === currentIndex
                   ? 'bg-km-teal w-6'

@@ -61,19 +61,25 @@ export default function ContactSection() {
                   <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-2">
                     Call Us
                   </h3>
-                  <div className="space-y-1">
-                    <a
-                      href="tel:07949314044"
-                      className="block font-body text-km-teal text-[1rem] hover:text-km-cyan transition-colors"
-                    >
-                      07949314044
-                    </a>
-                    <a
-                      href="tel:+919826444348"
-                      className="block font-body text-km-teal text-[1rem] hover:text-km-cyan transition-colors"
-                    >
-                      +91 98264 44348
-                    </a>
+                  <div className="space-y-2">
+                    <div>
+                      <a
+                        href="tel:+919826053123"
+                        className="block font-body text-km-teal text-[1rem] hover:text-km-cyan transition-colors"
+                      >
+                        +91 98260 53123
+                      </a>
+                      <p className="font-body text-gray-500 text-[0.8rem]">Mr. Sandeep Shrivastava</p>
+                    </div>
+                    <div>
+                      <a
+                        href="tel:+919826444348"
+                        className="block font-body text-km-teal text-[1rem] hover:text-km-cyan transition-colors"
+                      >
+                        +91 98264 44348
+                      </a>
+                      <p className="font-body text-gray-500 text-[0.8rem]">Ms. Aradhana Bhargava</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -100,17 +106,27 @@ export default function ContactSection() {
               </div>
             </div>
 
-            {/* Contact Person */}
+            {/* Contact Persons */}
             <div>
               <div className="flex items-start gap-3">
                 <FaUser className="text-km-teal text-[1.3rem] mt-1" />
-                <div>
-                  <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-1">
-                    Mr. Sandeep Shrivastava
-                  </h3>
-                  <p className="font-body text-gray-600 text-[0.9rem]">
-                    Proprietor, Saicotech Services
-                  </p>
+                <div className="space-y-3">
+                  <div>
+                    <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-0.5">
+                      Mr. Sandeep Shrivastava
+                    </h3>
+                    <p className="font-body text-gray-600 text-[0.9rem]">
+                      Proprietor, Saicotech Services
+                    </p>
+                  </div>
+                  <div>
+                    <h3 className="font-display font-bold text-gray-900 text-[1.1rem] mb-0.5">
+                      Ms. Aradhana Bhargava
+                    </h3>
+                    <p className="font-body text-gray-600 text-[0.9rem]">
+                      Sales Coordinator, Saicotech Services
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>

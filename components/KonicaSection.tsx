@@ -64,6 +64,7 @@ export default function KonicaSection() {
             <button
               key={filter.id}
               onClick={() => setActiveFilter(filter.id)}
+              suppressHydrationWarning
               className={`px-5 py-2.5 rounded-lg font-body font-medium text-[14px] transition-all duration-200 ${
                 activeFilter === filter.id
                   ? 'bg-km-teal text-white shadow-lg shadow-km-teal/20'

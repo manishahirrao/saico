@@ -73,13 +73,13 @@ export default function ProductCard({ product }: ProductCardProps) {
       }}
     >
       {/* Product Image */}
-      <div className="w-full h-[240px] relative flex items-center justify-center bg-gradient-to-br from-gray-50 to-white border-b border-gray-200 overflow-hidden group-hover:bg-gradient-to-br group-hover:from-km-teal/5 group-hover:to-white transition-all duration-300">
+      <div className="w-full h-[300px] relative flex items-center justify-center bg-gradient-to-br from-gray-50 to-white border-b border-gray-200 overflow-hidden group-hover:bg-gradient-to-br group-hover:from-km-teal/5 group-hover:to-white transition-all duration-300">
         <Image
           src={product.image!}
           alt={product.fullName}
           fill
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-          className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+          className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
         />
       </div>
 

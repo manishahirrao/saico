@@ -36,13 +36,13 @@ export default function RisoCard({ product }: RisoCardProps) {
       {/* Body */}
       <div className="p-6 space-y-4">
         {/* Product Image */}
-        <div className="w-full h-[240px] rounded-lg relative flex items-center justify-center bg-gradient-to-br from-[#22C55E]/5 to-white overflow-hidden group-hover:from-[#22C55E]/10 transition-all duration-300">
+        <div className="w-full h-[300px] rounded-lg relative flex items-center justify-center bg-gradient-to-br from-[#22C55E]/5 to-white overflow-hidden group-hover:from-[#22C55E]/10 transition-all duration-300">
           <Image
             src={product.image!}
             alt={product.fullName}
             fill
             sizes="(max-width: 768px) 100vw, 50vw"
-            className="object-contain p-6 group-hover:scale-105 transition-transform duration-300"
+            className="object-contain p-3 group-hover:scale-105 transition-transform duration-300"
           />
         </div>
 

@@ -167,18 +167,18 @@ export default function Footer() {
               </div>
               <div className="space-y-2">
                 <a
-                  href="tel:07949314044"
+                  href="tel:+919826053123"
                   className="flex items-center gap-2 hover:text-km-teal transition-colors"
                 >
                   <FaPhone className="text-km-teal" />
-                  07949314044
+                  +91 98260 53123 (Sandeep)
                 </a>
                 <a
                   href="tel:+919826444348"
                   className="flex items-center gap-2 hover:text-km-teal transition-colors"
                 >
                   <FaPhone className="text-km-teal" />
-                  +91 98264 44348
+                  +91 98264 44348 (Aradhana)
                 </a>
                 <a
                   href="https://wa.me/919826444348"
@@ -187,7 +187,7 @@ export default function Footer() {
                   className="flex items-center gap-2 hover:text-km-teal transition-colors"
                 >
                   <FaWhatsapp className="text-[#25D366]" />
-                  WhatsApp
+                  WhatsApp — Aradhana
                 </a>
               </div>
             </div>

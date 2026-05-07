@@ -20,6 +20,13 @@ export default function BusinessListingsSection() {
       badge: 'Verified Supplier',
       color: '#FF6B35',
     },
+    {
+      name: 'JustDial',
+      url: 'https://www.justdial.com/Bhopal/Saico-Tech-Services-Near-Sudarshan-Palace-and-Veera-Food-Street-M-P-Nagar/0755PX755-X755-120917171120-F9Y2_BZDET',
+      description: 'India\'s No.1 local search engine for businesses',
+      badge: 'Listed & Verified',
+      color: '#FF6600',
+    },
   ];
 
   return (
@@ -59,7 +66,7 @@ export default function BusinessListingsSection() {
         </div>
 
         {/* Listing Cards */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-[900px] mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-[1100px] mx-auto">
           {listings.map((listing, index) => (
             <motion.div
               key={listing.name}
@@ -72,7 +79,7 @@ export default function BusinessListingsSection() {
                 href={listing.url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group block bg-white rounded-xl border-2 border-gray-200 p-8 hover:border-km-teal hover:shadow-2xl transition-all duration-300"
+                className="group flex flex-col h-full bg-white rounded-xl border-2 border-gray-200 p-8 hover:border-km-teal hover:shadow-2xl transition-all duration-300"
               >
                 {/* Badge */}
                 <div className="flex items-center justify-between mb-4">
@@ -91,13 +98,13 @@ export default function BusinessListingsSection() {
                   {listing.name}
                 </h3>
 
-                {/* Description */}
-                <p className="font-body text-gray-600 text-[0.95rem] mb-6 leading-relaxed">
+                {/* Description — fixed height so all cards align */}
+                <p className="font-body text-gray-600 text-[0.95rem] leading-relaxed flex-1">
                   {listing.description}
                 </p>
 
-                {/* CTA */}
-                <div className="flex items-center gap-2 text-km-teal font-body font-semibold text-[0.95rem] group-hover:gap-3 transition-all">
+                {/* CTA — always at bottom */}
+                <div className="flex items-center gap-2 text-km-teal font-body font-semibold text-[0.95rem] mt-6 group-hover:gap-3 transition-all">
                   Visit Our Profile
                   <span className="group-hover:translate-x-1 transition-transform">→</span>
                 </div>
