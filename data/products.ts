@@ -45,7 +45,7 @@ export const konicaProducts: Product[] = [
     paperSize: 'A3/A4',
     colourOutput: 'Mono B&W',
     bestFor: 'Small to medium offices',
-    image: '/konica-minolta-227i.webp',
+    image: '/konica-minolta-photocopy-machine-207i-500x500.webp',
   },
   {
     id: '247i',
