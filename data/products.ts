@@ -138,10 +138,10 @@ export const konicaProducts: Product[] = [
     image: '/c251i-konica-minolta-multifunction-machine-500x500.webp',
   },
   {
-    id: 'c450i',
+    id: 'c451i',
     brand: 'konica',
-    model: 'C450i',
-    fullName: 'Konica Minolta bizhub C450i',
+    model: 'C451i',
+    fullName: 'Konica Minolta bizhub C451i',
     tag: 'volume',
     speed: '45 ppm',
     price: 'Get Quote',
@@ -150,7 +150,7 @@ export const konicaProducts: Product[] = [
     paperSize: 'A3/A4',
     colourOutput: 'Full Colour',
     bestFor: 'High-volume colour production',
-    image: '/c450i-konica-minolta-photocopy-machine-500x500.webp',
+    image: '/konica-minolta-model-c451i.webp',
   },
 ];
 
@@ -205,7 +205,7 @@ export const getFeaturedProducts = () => {
     konicaProducts.find((p) => p.id === 'c226i')!,
     risoProducts.find((p) => p.id === 'sf5330')!,
     konicaProducts.find((p) => p.id === 'c251i')!,
-    konicaProducts.find((p) => p.id === 'c450i')!,
+    konicaProducts.find((p) => p.id === 'c451i')!,
     risoProducts.find((p) => p.id === 'cv3230')!,
     konicaProducts.find((p) => p.id === '367')!,
   ];
