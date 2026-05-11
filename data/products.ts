@@ -75,7 +75,7 @@ export const konicaProducts: Product[] = [
     paperSize: 'A3/A4',
     colourOutput: 'Mono B&W',
     bestFor: 'Busy workgroups',
-    image: '/konica-minolta-multifunction-printer-500x500.webp',
+    image: '/Konica Minolta bizhub 266i.webp',
   },
   {
     id: '306i',
