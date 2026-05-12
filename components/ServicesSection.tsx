@@ -7,61 +7,47 @@ import { FaBullseye, FaShieldAlt, FaTools, FaFileContract, FaProjectDiagram, FaR
 export default function ServicesSection() {
   const services = [
     {
-      title: 'Sales & On-Site Demo',
+      title: 'Sales & Demos',
       icon: FaBullseye,
       color: '#00B0CA',
       bullets: [
-        'On-site product demonstrations',
-        'Model comparison & consultation',
-        'Volume analysis & recommendations',
-        'Competitive pricing',
+        'Onsite product demonstrations',
+        'Coverage across Madhya Pradesh',
+        'Education & corporate solutions',
       ],
     },
     {
-      title: 'AMC — Annual Maintenance',
+      title: 'Reliable Service Support',
       icon: FaShieldAlt,
       color: '#10B981',
       bullets: [
-        'Preventive maintenance schedules',
-        'Timely consumables replacement',
-        '24-hour issue resolution',
+        '30+ expert engineers',
+        '24/7 issue resolution',
         'Priority support access',
+        'Multi-channel support (desk, call, video, onsite)',
       ],
     },
     {
-      title: 'Repair & Spare Parts',
+      title: 'Consumables & Maintenance',
       icon: FaTools,
       color: '#F59E0B',
       bullets: [
-        '30 trained service engineers',
-        'Genuine OEM parts only',
-        'All Madhya Pradesh coverage',
-        'Quick turnaround time',
+        'Timely replacements',
+        'Printer repair & spares',
+        'Buyback option',
+        'Coverage across Madhya Pradesh',
       ],
     },
     {
-      title: 'Rental / Lease',
+      title: 'Flexible Contracts',
       icon: FaFileContract,
       color: '#8B5CF6',
       bullets: [
-        'Event & temporary rental',
-        'Long-term lease options',
-        'Startup packages available',
-        'Flexible payment terms',
+        'AMC & TG Maintenance Contracts',
+        'Rental options for education & industry',
+        'Preventive maintenance schedules',
       ],
     },
-    {
-      title: 'Multimedia Projectors',
-      icon: FaProjectDiagram,
-      color: '#00D4E8',
-      bullets: [
-        'Education & corporate solutions',
-        'Professional installation',
-        'Calibration & setup',
-        'After-sales support',
-      ],
-    },
-   
   ];
 
   return (
@@ -89,8 +75,7 @@ export default function ServicesSection() {
 
           {/* Subheading */}
           <p className="font-body text-gray-600 text-[1rem] max-w-[700px] mx-auto">
-            From sales to AMC, repairs to rentals — we provide comprehensive support with
-            genuine parts and trained engineers across all of Madhya Pradesh.
+            <strong>Saicotech Services</strong> — Comprehensive solutions for Madhya Pradesh. From sales to AMC, repairs to rentals, we provide end-to-end support with genuine parts and trained engineers.
           </p>
         </div>
 
