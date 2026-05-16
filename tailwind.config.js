@@ -8,10 +8,10 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        // Konica Minolta Brand Colors
-        'km-teal': '#00B0CA',
-        'km-cyan': '#00D4E8',
-        'km-teal-deep': '#007EA6',
+        // Brand Colors - Orange Theme
+        'km-teal': '#F97316',      // orange-500
+        'km-cyan': '#FB923C',      // orange-400
+        'km-teal-deep': '#EA580C', // orange-600
         'km-navy': '#001C3D',
         'km-navy-mid': '#002B5C',
         'km-navy-light': '#00387A',
@@ -27,7 +27,7 @@ module.exports = {
         
         // Product Category Accents
         'cat-mono': '#64748B',
-        'cat-colour': '#00B0CA',
+        'cat-colour': '#F97316',   // orange-500
         'cat-volume': '#F59E0B',
         'cat-riso': '#10B981',
         'cat-wide': '#8B5CF6',

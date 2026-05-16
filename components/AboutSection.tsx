@@ -34,7 +34,7 @@ export default function AboutSection() {
             ABOUT US
           </span>
           <h2
-            className="font-display font-bold text-gray-900 mb-4"
+            className="font-display font-bold text-orange-500 mb-4"
             style={{ fontSize: 'clamp(1.7rem, 3vw, 2.5rem)' }}
           >
             Guided by Expertise. Trusted for 25 Years.

@@ -54,14 +54,14 @@ export default function HeroSection() {
             {/* Headline */}
             <motion.h1
               variants={itemVariants}
-              className="font-display font-extrabold text-gray-900 leading-[1.07]"
+              className="font-display font-extrabold text-orange-500 leading-[1.07]"
               style={{ fontSize: 'clamp(2.5rem, 5.5vw, 4.25rem)' }}
             >
-              Bhopal's Authorised
+              Saicotech Services
               <br />
-              <span className="text-orange-500">Konica Minolta & Riso</span>
+              Authorised Channel Partner
               <br />
-              Partner
+              Konica Minolta & Riso
             </motion.h1>
 
             {/* Subheadline */}

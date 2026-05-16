@@ -19,7 +19,7 @@ export default function ContactSection() {
             CONTACT US
           </span>
           <h2
-            className="font-display font-bold text-gray-900 mt-3"
+            className="font-display font-bold text-orange-500 mt-3"
             style={{ fontSize: 'clamp(1.7rem, 3vw, 2.5rem)' }}
           >
             Get in Touch with Saicotech
