@@ -54,7 +54,7 @@ export default function AboutSection() {
             <div className="mb-6">
               <div className="inline-flex items-center px-4 py-2 bg-km-teal/10 border border-km-teal/30 rounded-full">
                 <div className="font-display font-bold text-gray-900 text-[1rem]">
-                  Authorised Channel Partner
+                  Saicotech Services Authorised Channel Partner of Konica Minolta & Riso
                 </div>
                 <div className="font-body text-km-teal text-[0.85rem] ml-2">· Since 1999</div>
               </div>
@@ -62,7 +62,7 @@ export default function AboutSection() {
 
             {/* Paragraph 1 */}
             <p className="font-body text-gray-700 text-[1rem] leading-[1.7]">
-              Established in 1999 as <strong>authorised channel partner of Konica Minolta and
+              Established in 1999 as <strong>Saicotech Services authorised channel partner of Konica Minolta and
               Riso, Japan</strong> — offering A3 & A4 colour/B&W laser heavy-duty MFPs, copiers
               at very low running cost, multimedia projectors, fax machines, A0-size wide-format
               copiers/printers/scanners, and high-speed digital duplicators.

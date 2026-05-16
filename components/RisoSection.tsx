@@ -33,7 +33,7 @@ export default function RisoSection() {
 
           {/* Subheading */}
           <p className="font-body text-gray-600 text-[1rem] max-w-[700px]">
-            Authorised channel partner for Riso, Japan. Digital duplicators deliver 90% lower
+            Saicotech Services authorised channel partner for Riso, Japan. Digital duplicators deliver 90% lower
             cost per page and 5× faster bulk printing for schools, print shops, and high-volume
             operations.
           </p>

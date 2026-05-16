@@ -49,7 +49,7 @@ export default function TermsAndConditionsPage() {
               2. Services Offered
             </h2>
             <p className="text-white/80 font-body leading-relaxed mb-4">
-              Saicotech Services is an authorised channel partner of Konica Minolta and Riso Japan, offering:
+              Saicotech Services is Saicotech Services authorised channel partner of Konica Minolta and Riso Japan, offering:
             </p>
             <ul className="list-disc list-inside text-white/80 font-body space-y-2 ml-4">
               <li>Sales of multifunction printers, copiers, and digital duplicators</li>

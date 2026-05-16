@@ -59,7 +59,7 @@ export default function HeroSection() {
             >
               Bhopal's Authorised
               <br />
-              <span className="text-km-teal">Konica Minolta & Riso</span>
+              <span className="text-orange-500">Konica Minolta & Riso</span>
               <br />
               Partner
             </motion.h1>

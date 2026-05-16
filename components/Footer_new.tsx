@@ -51,7 +51,7 @@ export default function Footer() {
               />
             </div>
             <p className="font-body text-gray-400 text-[0.9rem] mb-4 leading-relaxed">
-              Authorised Channel Partner for Konica Minolta & Riso, Japan since 1999.
+              Saicotech Services Authorised Channel Partner for Konica Minolta & Riso, Japan since 1999.
             </p>
             <div className="inline-flex items-center px-3 py-1.5 bg-km-teal/10 border border-km-teal/30 rounded-full mb-4">
               <span className="font-mono text-km-teal text-[11px]">

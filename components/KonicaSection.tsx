@@ -46,14 +46,14 @@ export default function KonicaSection() {
 
           {/* Subheading */}
           <p className="font-body text-gray-600 text-[1rem] max-w-[700px]">
-            Authorised channel partner for Konica Minolta, Japan. Genuine parts, expert
+            Saicotech Services authorised channel partner for Konica Minolta, Japan. Genuine parts, expert
             service, and comprehensive AMC coverage across all of Madhya Pradesh.
           </p>
 
           {/* Badge */}
           <div className="mt-4">
             <span className="inline-flex items-center px-4 py-2 bg-km-teal/10 border border-km-teal/30 rounded-full text-km-teal text-[12px] font-body font-medium">
-              Authorised Channel Partner — Konica Minolta, Japan
+              Saicotech Services Authorised Channel Partner — Konica Minolta, Japan
             </span>
           </div>
         </div>
