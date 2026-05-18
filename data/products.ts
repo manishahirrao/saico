@@ -135,7 +135,7 @@ export const konicaProducts: Product[] = [
     paperSize: 'A3/A4',
     colourOutput: 'Full Colour',
     bestFor: 'Professional colour printing & busy workgroups',
-    image: '/c251i-konica-minolta-multifunction-machine-500x500.webp',
+    image: '/c251i-konica-minolta-multifunction-machine-500x500.jpg',
   },
   {
     id: 'c451i',
